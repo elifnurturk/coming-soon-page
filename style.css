@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2a3140;
+    color: #ffffff;
+    animation: backgroundChange 10s infinite;
+}
+
+@keyframes backgroundChange {
+    0% { background-color: #2a3140; }
+    20% { background-color: #000000; }
+    40% { background-color: #58bee0; }
+    60% { background-color: #517047; }
+    80% { background-color: rgb(179, 104, 54); }
+    100% { background-color: #2a3140; }
+}
+
+@keyframes textChange {
+    0% { color: #ffffff; }
+    20% { color: #517047; }
+    40% { color: rgb(179, 104, 54); }
+    60% { color: #000000; }
+    80% { color: #58bee0; }
+    100% { color: #ffffff }
+}
+
+.container {
+    text-align: center;
+    padding: 0 20px;
+    animation: textChange 10s infinite;
+}
+
+h1 {
+    font-size: 5em;
+    margin: 0.2em 0 0.5em 0;
+    text-shadow: white 2px;
+}
+h2 {
+    padding-top: 25px;
+}
+p {
+    font-size: 1.6em;
+}
+
+
+.social-icons a {
+    text-decoration: none;
+    animation: textChange 10s infinite;
+    font-size: 1.5em;
+    margin: 12px 8px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #24b1e2; /* Change this color to match your preference */
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-bottom: -100px;
+        margin-top: -150px;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+margin-bottom: 0;    }
+    p {
+        font-size: 1.1em;
+    }
+    .social-icons a {
+        font-size: 1.4em;
+    }
+}
